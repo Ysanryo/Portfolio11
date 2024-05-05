@@ -44,7 +44,7 @@ color:
 
 .title {
 background-color: 
-  #f0f0f0; /* 背景色 */
+  #f0f0f0; 
 animation: 
   bg-color 30s infinite;
 display: 
@@ -55,6 +55,8 @@ align-items:
   center;
 height: 
   500px;
+width: 
+  100vw;
 }
 
 
@@ -252,24 +254,23 @@ margin-left:
 transform: 
   scale(1);
 transition: 
-  .3s ease-in-out;/*移り変わる速さを変更したい場合はこの数値を変更*/
+  .3s ease-in-out;
 }
 
 .zoom_img a:
-hover img {/*hoverした時の変化*/
+hover img {
 transform: 
-  scale(1.2);/*拡大の値を変更したい場合はこの数値を変更*/
+  scale(1.2);
 }
 
-/*　画像のマスク　*/
 
 .mask {
 display: 
   block;
 line-height: 
-  0;/*行の高さを0にする*/
+  0;
 overflow: 
-  hidden;/*拡大してはみ出る要素を隠す*/
+  hidden;
 }
 
 .name {
@@ -278,3 +279,33 @@ font-size:
 margin-left: 
   125px;
 }
+
+@media (max-width: 
+600px) {
+  .main-nav {
+  font-size: 
+    1rem;
+  margin-top: 
+    10px;
+  }
+  .main-nav li {
+  margin: 
+    0 20px;
+  }
+  .page-header {
+  flex-direction: 
+    column;
+  align-items: 
+    center;
+  }
+  .name {
+  font-size:
+    20px;
+  margin-left: 
+    80px;
+  }
+  .zoom_img img {
+  margin-left: 
+    50px;
+  }
+}  
